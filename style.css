@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Video Background */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    background-color: black; /* Fallback for unsupported video */
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Add semi-transparent overlay */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    width: 100%;
+    background: transparent;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adventure Section */
+#adventure-options {
+    padding: 3em;
+    text-align: center;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.adventure-card {
+    background-color: rgb(198, 222, 243);
+    border-radius: 8px;
+    box-shadow:  4px 6px rgba(7, 32, 124, 0.845);
+    padding: 1em;
+    text-align: center;
+}
+
+.adventure-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+/* Seasonal Suggestions */
+#seasonal-suggestions {
+    padding: 3em;
+    text-align: center;
+    background-color: rgb(152, 200, 242);
+}
+
+.seasons-grid {
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    
+}
+    
+
+
+.season-card {
+    margin-bottom: 3em;
+    padding: 5em; /* Adjust padding for better spacing */
+    background-color: rgb(151, 220, 241);
+    color: white;
+    box-shadow:  4px 6px rgba(7, 32, 124, 0.845);
+    border-radius: 8px;
+    text-align: center,top; /* Keeps text centered horizontally */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center; /* Align items in the center horizontally */
+    font-size: 1.2em;
+}
+
+.box1 {
+    background-image: url('summer.jpg');
+    background-size: cover; /* Make the image cover the box */
+    background-position: center; /* Center the image in the box */
+
+}
+
+.box2 {
+    background-image: url('winter.jpg');
+    background-size: cover; /* Make the image cover the box */
+    background-position: center; /* Center the image in the box */
+}
+
+.box3 {
+    background-image: url('spring.jpg');
+    background-size: cover; /* Make the image cover the box */
+    background-position: center; /* Center the image in the box */
+}
+
+.box4 {
+    background-image: url('autumn.jpg');
+    background-size: cover; /* Make the image cover the box */
+    background-position: center; /* Center the image in the box */
+}
