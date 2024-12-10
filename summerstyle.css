@@ -3,12 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 header {
-    background: linear-gradient(to right, #4CAF50, #81C784);
+    background: linear-gradient(to right, #FFB74D, #FF7043);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -52,7 +52,7 @@ main {
 }
 
 .destination h2 {
-    color: #4CAF50;
+    color: #FF7043;
     margin-bottom: 10px;
 }
 
@@ -63,3 +63,4 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
