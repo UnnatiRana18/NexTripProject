@@ -54,6 +54,11 @@
     left: 0;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(10, 45, 45);
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -179,4 +184,103 @@
     background-image: url('autumn.jpg');
     background-size: cover; /* Make the image cover the box */
     background-position: center; /* Center the image in the box */
+}
+
+/* Deals Section */
+#deals {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#deals h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.deals-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.deal-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: left;
+}
+
+.deal-card h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.deal-card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.deal-card .deal-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #2c3e50;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.deal-card .deal-link:hover {
+    background-color: #1abc9c;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer-content p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-content ul li {
+    display: inline;
+}
+
+.footer-content ul li a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-content ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
